@@ -1,22 +1,3 @@
-# from django.db import models
-# from django.conf import settings
-# from apps.flights.models import Flight
-
-# class Booking(models.Model):
-#     PAYMENT_CHOICES = (
-#         ('Pending', 'Pending'),
-#         ('Completed', 'Completed'),
-#         ('Failed', 'Failed'),
-#     )
-#     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='bookings')
-#     flight = models.ForeignKey(Flight, on_delete=models.CASCADE, related_name='bookings')
-#     seats_reserved = models.PositiveIntegerField(default=1)
-#     payment_status = models.CharField(max_length=20, choices=PAYMENT_CHOICES, default='Pending')
-#     created_at = models.DateTimeField(auto_now_add=True)
-
-#     def __str__(self):
-#         return f"Booking {self.id} by {self.user.username}"
-
 from django.db import models
 from django.conf import settings
 from django.utils import timezone

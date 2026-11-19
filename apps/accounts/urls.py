@@ -1,22 +1,3 @@
-# from django.urls import path
-# from rest_framework_simplejwt.views import TokenRefreshView
-# from .views import RegisterView, CustomLoginView, PendingUsersList, ApproveUserView
-# from .views import AdminUserListView, AdminUserReviewActionView
-
-# urlpatterns = [
-#     # Authentication
-#     path('auth/register/', RegisterView.as_view(), name='register'),
-#     path('auth/login/', CustomLoginView.as_view(), name='login'),
-#     path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    
-#     # Admin User Management
-#     path('admin/users/pending/', PendingUsersList.as_view(), name='admin_pending_users'),
-#     path('admin/users/<int:id>/approve/', ApproveUserView.as_view(), name='admin_approve_user'),
-#     path('admin/users/', AdminUserListView.as_view(), name='admin_user_list'),
-#     path('admin/users/<int:pk>/review/', AdminUserReviewActionView.as_view(), name='admin_user_review'),
-# ]
-
-
 from django.urls import path
 from rest_framework_simplejwt.views import TokenRefreshView
 from .views import (
