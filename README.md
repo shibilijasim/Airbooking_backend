@@ -25,12 +25,12 @@ REST API and asynchronous worker service for **AirBooking**, built with Django, 
 
 ```bash
 git clone <your-backend-repo-url>
-cd D:\Django\Projects\Airbooking
+open your folder
 python -m venv myenv
 myenv\Scripts\activate
 
 ## Install dependencies
-cd D:\Django\Projects\Airbooking\backend
+open your folder
 pip install -r requirements.txt
 pip install packaging
 
@@ -38,9 +38,9 @@ pip install packaging
 redis-server
 
 # Terminal 2 — Start Celery Worker (Windows)
-cd D:\Django\Projects\Airbooking\backend
+open your folder
 ..\myenv\Scripts\celery.exe -A config worker --loglevel=info --pool=solo
 
 # Terminal 3 — Start Django API Server
-cd D:\Django\Projects\Airbooking\backend
+open your folder
 ..\myenv\Scripts\python.exe manage.py runserver
